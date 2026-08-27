@@ -7,18 +7,16 @@ import GTMNoScriptAstroComponent from '../components/GTMNoScript.astro';
 interface Props {
   title: string;
   description: string;
-  image: string;
   type?: 'website';
 }
 
-const { title, description, image, type } = Astro.props;
+const { title, description, type } = Astro.props;
 ---
 
 <html lang="en">
   <BASEHEAD 
       title={title} 
       description={description} 
-      image={image} 
       type={type}>
   </BASEHEAD>
   </head>

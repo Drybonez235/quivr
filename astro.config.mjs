@@ -1,7 +1,5 @@
 import { defineConfig } from 'astro/config';
-
-import tailwindcss from "@tailwindcss/vite";
-//npm install tailwindcss @tailwindcss/vite
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   output: 'static',
@@ -11,12 +9,9 @@ export default defineConfig({
     format: 'directory', // Ensures pages are built as /page/index.html
   },
 
-  site: 'https://example.com',
+  site: 'https://quivr.ad-pages.com',
 
-  vite: {
-    plugins: [tailwindcss()],
-  },
-
+  integrations: [sitemap()],
   server: {
     port: 3000,
     open: true, 
