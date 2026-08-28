@@ -1,7 +1,7 @@
 ---
-const SITE_DEFAULT_TITLE = 'My Awesome Landing Page';
-const SITE_DEFAULT_DESC = 'Landing Page for ads';
-const SITE_DEFAULT_IMG = '/favicon.svg'; // Placed in public/ folder
+const SITE_DEFAULT_TITLE = 'CRM for Financial Advisors | Quivr CRM – Built for Advisory Firms';
+const SITE_DEFAULT_DESC = 'Quivr CRM: built by financial planners for planners to centralize client data, automate workflows, streamline compliance, and deliver a higher-quality, scalable client experience."';
+const SITE_DEFAULT_IMG = 'http://static1.squarespace.com/static/67251c160dab253737d5daec/t/675319cdfcd22c0a12e9bdac/1733499342060/Quivr+website+photo+%28no+background%29.png?format=1500w'; // Placed in public/ folder
 
 interface Props {
   title?: string;
@@ -20,7 +20,7 @@ const {
 } = Astro.props;
 
 const canonicalURL = Astro.props.canonicalURL || new URL(Astro.url.pathname, Astro.site);
-const formattedTitle = title === SITE_DEFAULT_TITLE ? title : `${title} | ${SITE_DEFAULT_TITLE}`;
+const formattedTitle = `${title}`;
 
 ---
 
@@ -29,7 +29,7 @@ const formattedTitle = title === SITE_DEFAULT_TITLE ? title : `${title} | ${SITE
 <title>{formattedTitle}</title>
 <meta name="title" content={formattedTitle} />
 <meta name="description" content={description} />
-
+<link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/67251c160dab253737d5daec/e6fcf898-983a-48e3-803a-f02494e42312/favicon.ico?format=100w">
 <meta property="og:type" content={type} />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={formattedTitle} />

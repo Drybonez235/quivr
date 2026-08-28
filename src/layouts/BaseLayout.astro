@@ -19,11 +19,13 @@ const { title, description, type } = Astro.props;
       description={description} 
       type={type}>
   </BASEHEAD>
-  </head>
+ 
   <body>
     <GTMNoScriptAstroComponent></GTMNoScriptAstroComponent>
     <NAV></NAV>
       <slot /> <!-- This is where page content goes -->
     <FOOTER></FOOTER>
   </body>
+
+ 
 </html>

@@ -1,14 +1,31 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import  Hero from '../components/Hero.astro';
+import ValueProp from'../components/ValueProp.astro'
+import SignsCosting from '../components/Signs-Costing.astro'
+import WhichOfThese from '../components/WhichOfThese.astro'
+import TheRealCost from '../components/TheRealCost.astro'
+import  HowItWorks from '../components/HowItWorks.astro';
+import UsedByAstroComponent from '../components/UsedBy.astro';
+import AboutUs from '../components/AboutUs.astro';
+import  FAQ  from '../components/FAQ.astro';
+import Footer  from '../components/Footer.astro';
 import '../styles/global.css';  
 ---
 
 <BaseLayout 
-  title="Home Page" 
-  description="Welcome to my lightning fast website built with Astro."
+  title="Quivr CRM" 
+  description="Quivr CRM: built by financial planners for planners to centralize client data, automate workflows, streamline compliance, and deliver a higher-quality, scalable client experience."
 >
   <main>
-  
-   
+  <Hero></Hero>
+  <ValueProp></ValueProp>
+  <SignsCosting></SignsCosting>
+  <WhichOfThese></WhichOfThese>
+  <TheRealCost></TheRealCost>
+  <HowItWorks></HowItWorks>
+  <UsedByAstroComponent></UsedByAstroComponent>
+  <AboutUs></AboutUs>
+  <FAQ></FAQ>
   </main>
 </BaseLayout>

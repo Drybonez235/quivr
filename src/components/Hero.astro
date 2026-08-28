@@ -1,3 +1,119 @@
 ---
-
+import '../styles/global.css';   
 ---
+<!-- HERO SECTION -->
+<section class="bg-[radial-gradient(120%_90%_at_78%_10%,rgba(201,58,58,0.42)_0%,rgba(201,58,58,0)_48%),radial-gradient(90%_70%_at_10%_95%,rgba(217,164,65,0.10)_0%,rgba(217,164,65,0)_50%),linear-gradient(168deg,#3A0909_0%,#571212_55%,#701A18_100%)] text-white pt-[72px] pb-[88px] px-6 md:px-12 flex items-center justify-center data-anim">
+  <div  class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    
+    <!-- Left Column: Content -->
+    <div data-anim style="--d:0.00s" class="lg:col-span-7 space-y-6">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 border border-red-soft/30 bg-moss/40 px-3 py-1 rounded-full text-xs tracking-wider uppercase text-red-soft font-semibold" data-anim>
+        <span class="w-1.5 h-1.5 rounded-full bg-red-soft inline-block"></span>
+        For Independent Advisory Firms
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl md:text-5xl lg:text-[52px] font-bold leading-tight tracking-tight text-white" data-anim style="--d:.08s">
+        Your CRM Is <em class="not-italic text-gold">Quietly Stealing</em> Hours From You Every Week.
+      </h1>
+
+      <!-- Body Copy -->
+      <p class="text-paper-dim/80 text-lg leading-relaxed max-w-2xl" data-anim style="--d:.16s">
+        Admin work, meeting prep, duplicate entry. Generic CRMs weren't built for planning firms. Quivr was: built by CFPs, perfected by operations pros, with your data migrated in <b class="text-white font-semibold">under a week</b>.
+      </p>
+
+      <!-- Bullet / Value Props -->
+      <div class="space-y-3 pt-2 text-sm text-paper-dim/90" data-anim style="--d:.24s">
+        <div class="flex items-start gap-2.5">
+          <span class="text-gold font-bold">✓</span>
+          <div><b class="text-white font-bold">#1 Workflow Tool</b>. T3 / Inside Information Survey, 2025 &amp; 2026</div>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <span class="text-gold font-bold">✓</span>
+          <div><b class="text-white font-bold">9.47</b> top user rating, the highest in the CRM category two years running</div>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <span class="text-gold font-bold">✓</span>
+          <div>Advisors report saving <b class="text-white font-bold underline decoration-gold/50 decoration-2">2–3 hours</b> of admin per week</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Form Card -->
+    <div class="lg:col-span-5">
+      <form class="bg-paper text-text rounded-lg p-6 md:p-8 shadow-2xl space-y-4" id="leadForm" novalidate data-anim="right" style="--d:.15s">
+        
+        <!-- Form Header -->
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-red-soft/20 flex items-center justify-center text-red shrink-0">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold text-black tracking-tight">See the Hours You'd Get Back</h2>
+        </div>
+
+        <p class="text-xs text-text-dim leading-normal">Tell us what CRM you're on. We'll show you the hours you'd get back.</p>
+
+        <!-- Scarcity Banner -->
+        <div class="bg-gold-tint border border-gold/20 rounded-lg p-3 text-xs text-gold-deep leading-relaxed">
+          🔒 We onboard a <b class="font-bold text-red">limited number of firms</b> each month. Book now to secure your migration slot
+        </div>
+
+        <!-- Form Fields -->
+        <div class="space-y-1">
+          <label class="block text-xs font-semibold text-text" for="f-name">Full name</label>
+          <input class="w-full px-3 py-2 bg-white border border-line rounded-md text-sm text-text focus:outline-none focus:ring-2 focus:ring-red/50 focus:border-red" id="f-name" name="name" type="text" autocomplete="name" required />
+        </div>
+
+        <div class="space-y-1">
+          <label class="block text-xs font-semibold text-text" for="f-email">Work email</label>
+          <input class="w-full px-3 py-2 bg-white border border-line rounded-md text-sm text-text focus:outline-none focus:ring-2 focus:ring-red/50 focus:border-red" id="f-email" name="email" type="email" autocomplete="email" required />
+          <div class="hidden text-xs text-red mt-1" id="emailErr">Enter a valid email address.</div>
+        </div>
+
+        <div class="space-y-1">
+          <label class="block text-xs font-semibold text-text" for="f-firm">Firm name</label>
+          <input class="w-full px-3 py-2 bg-white border border-line rounded-md text-sm text-text focus:outline-none focus:ring-2 focus:ring-red/50 focus:border-red" id="f-firm" name="firm" type="text" autocomplete="organization" />
+        </div>
+
+        <div class="space-y-1">
+          <label class="block text-xs font-semibold text-text" for="f-crm">What CRM are you on today?</label>
+          <select class="w-full px-3 py-2 bg-white border border-line rounded-md text-sm text-text focus:outline-none focus:ring-2 focus:ring-red/50 focus:border-red" id="f-crm" name="current_crm" required>
+            <option value="">Select one…</option>
+            <option>Redtail</option>
+            <option>Wealthbox</option>
+            <option>Salesforce</option>
+            <option>HubSpot</option>
+            <option>Spreadsheets / None</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="space-y-1">
+          <label class="block text-xs font-semibold text-text" for="f-team">Team size</label>
+          <select class="w-full px-3 py-2 bg-white border border-line rounded-md text-sm text-text focus:outline-none focus:ring-2 focus:ring-red/50 focus:border-red" id="f-team" name="team_size">
+            <option>Just me</option>
+            <option>2–5</option>
+            <option>6–15</option>
+            <option>16+</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="w-full py-3 px-4 bg-red hover:bg-red/90 text-white font-bold text-sm rounded-md transition-colors shadow-md mt-2" type="submit">
+          Show Me the Hours I'd Get Back
+        </button>
+
+        <!-- Form Fine Print -->
+        <p class="text-center text-[11px] text-text-dim pt-1">
+          ✓ No sales pressure · No consultant traps · Migration in under a week
+        </p>
+
+      </form>
+    </div>
+
+  </div>
+</section>

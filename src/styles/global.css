@@ -2,5 +2,19 @@
 
 @theme {
   /* Effortlessly add or override custom theme values */
-
+  --color-ink: #240505;
+  --color-pine: #330A08;
+  --color-moss: #451010;
+  --color-black: #121212;
+  --color-paper: #FAFAF8;
+  --color-paper-dim: #F3F1EE;
+  --color-red: #8C1D1D;
+  --color-red-soft: #E3B3AB;
+  --color-gold: #D9A441;
+  --color-gold-deep: #9A6E1B;
+  --color-gold-tint: #F7ECD4;
+  --color-text: #191919;
+  --color-text-dim: #61605E;
+  --color-line: #E3E0DC;
+  --color-white: #FFF;
 }
